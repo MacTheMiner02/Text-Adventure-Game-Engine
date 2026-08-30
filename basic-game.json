@@ -1,0 +1,49 @@
+{
+  "START":
+  {
+    "text": "You find yourself in a forest. There is a path to your left that leads to the ocean. On the right there is a cave",
+    "commands":
+    {
+      "left": "ocean path",
+      "right": "cave path"
+    },
+    "inventory": []
+  },
+
+  "ocean path":
+  {
+    "text": "The rush of the sea fills your ears. You reach the edge of the clearing. The ocean looks very inviting. Do you want to swim?",
+    "commands":
+    {
+      "yes": "swim END",
+      "no": "sun bathe END"
+    },
+    "inventory": []
+  },
+
+  "swim END":
+  {
+    "text": "You jump in and the ocean is cool. Suddenly, a current pulls you away. You fight it but it is no use. The rocks are getting closer. BANG. You head bashes into the rocks. Everything fades to black."
+  },
+
+  "sun bathe END":
+  {
+    "text": "You spend all day lounging in the sun. You leave the beach and head home, happy and content."
+  },
+
+  "cave path":
+  {
+    "text": "The air cools as you get closer to the cave. Are you sure this is worth it?",
+    "commands":
+    {
+      "yes": "gold END",
+      "no": "START"
+    },
+    "inventory": []
+  },
+
+  "gold END":
+  {
+    "text": "You walk into the cave. Sitting inside is a treasure chest full of gold! You're rich!"
+  }
+}
